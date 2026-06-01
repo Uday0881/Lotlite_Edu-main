@@ -1,0 +1,22 @@
+/* Design tokens and CSS variables for program theme injection */
+:root{
+  --program-primary: var(--primary);
+  --program-secondary: var(--secondary);
+  --program-accent: var(--accent);
+}
+
+/* Utility classes to use program colors */
+.program-bg {
+  background: linear-gradient(90deg, rgba(0,0,0,0.02), var(--program-primary));
+}
+
+.program-accent {
+  color: var(--program-accent);
+}
+
+.program-button {
+  background: var(--program-primary);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
