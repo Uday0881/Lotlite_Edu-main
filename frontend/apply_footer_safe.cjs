@@ -1,0 +1,7 @@
+﻿const fs = require('fs');
+let c = fs.readFileSync('src/components/layout/Footer.jsx', 'utf8');
+c = c.replace('import { ArrowRight, Linkedin, Twitter, Facebook } from "lucide-react";', 'import { ArrowRight } from "lucide-react";');
+c = c.replace('<Linkedin size={20} />', '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>');
+c = c.replace('<Twitter size={20} />', '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-1.5 1.5-3 2c-1.5-1-3.1-1.5-4.5-1.5-4.1 0-7.5 3.4-7.5 7.5 0 .6.1 1.2.2 1.8C3.6 13.6 1.6 9.3 1.6 9.3s1.5 4.5 5.6 6.8C2 18 3 20.5 6 23c-2 1.5-4.5 2.6-7.3 2.8 6.4 4.2 14.2 2.5 17.8-2.9 3.7-5.4 3.4-10.4 3.4-10v-1.1c1.6-1.2 2.9-2.8 3.7-4.6z"></path></svg>');
+c = c.replace('<Facebook size={20} />', '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>');
+fs.writeFileSync('src/components/layout/Footer.jsx', c);
