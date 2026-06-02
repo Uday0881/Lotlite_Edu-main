@@ -67,7 +67,7 @@ function SuccessState() {
         <Rocket size={16} /> Application Submitted
       </div>
       <h3 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--foreground)' }}>
-        You're all set!
+        Application Submitted Successfully.
       </h3>
       <div
         style={{
@@ -97,7 +97,7 @@ function SuccessState() {
             lineHeight: 1.6,
           }}
         >
-          A program lead will reach you within 24 hours. Watch your inbox for the diagnostic invite.
+          Our admissions team will contact you shortly.
         </p>
       </div>
     </>

@@ -55,12 +55,12 @@ export default function LifeCarousel() {
                 onClick={() => go(dir)}
                 aria-label={dir === -1 ? 'Previous' : 'Next'}
                 style={{
-                  width: '2.75rem', height: '2.75rem', borderRadius: '50%',
+                  width: '2.75rem', height: '2.75rem', borderRadius: '50%', outline: 'none',
                   border: '1px solid var(--hairline)', background: 'rgba(255,255,255,0.05)',
                   display: 'grid', placeItems: 'center', cursor: 'pointer',
                   color: 'var(--foreground)', transition: 'background 300ms',
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.1)')}
+                onFocus={(e) => (e.currentTarget.style.boxShadow = '0 0 0 2px var(--gold)')} onBlur={(e) => (e.currentTarget.style.boxShadow = 'none')} onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.1)')}
                 onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.05)')}
               >
                 {dir === -1 ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}

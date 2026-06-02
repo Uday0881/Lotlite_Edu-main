@@ -1,3 +1,4 @@
+import SEO from '../components/shared/SEO.jsx';
 import VisionHero from '../components/vision/VisionHero.jsx'
 import VisionManifesto from '../components/vision/VisionManifesto.jsx'
 import VisionFounder from '../components/vision/VisionFounder.jsx'

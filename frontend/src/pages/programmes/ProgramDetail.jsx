@@ -1,3 +1,4 @@
+import SEO from '../../components/shared/SEO.jsx';
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Clock, Award, Sparkles } from 'lucide-react';
@@ -33,6 +34,7 @@ export default function ProgramDetail() {
         '--glow': program.theme.glow,
       }}
     >
+      <SEO title={program.title} />
       <section
         style={{
           padding: '4rem 1.5rem',

@@ -1,3 +1,4 @@
+import SEO from '../components/shared/SEO.jsx';
 import { usePageTheme } from '../hooks/usePageTheme.js'
 
 /**
@@ -8,6 +9,7 @@ function LegalPage({ title, intro, children }) {
   usePageTheme('home')
   return (
     <section style={{ paddingTop: '9rem', paddingBottom: '6rem' }}>
+      <SEO title={title} />
       <div style={{ maxWidth: '48rem', margin: '0 auto', padding: '0 1.5rem' }}>
         <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: '0.75rem' }}>Legal</div>
         <h1 style={{ fontSize: 'clamp(2rem,5vw,3rem)', fontWeight: 700 }}>{title}</h1>

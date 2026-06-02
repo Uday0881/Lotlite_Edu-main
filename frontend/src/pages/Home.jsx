@@ -1,3 +1,4 @@
+import SEO from '../components/shared/SEO.jsx';
 import { useEffect } from 'react'
 import { usePageTheme } from '../hooks/usePageTheme.js'
 import HeroSection from '../components/home/HeroSection.jsx'
@@ -31,6 +32,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO title="Home" />
       <HeroSection />
       <SpiralCurriculumOverview />
       <PartnersMarquee />

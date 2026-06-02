@@ -19,7 +19,11 @@ const VisionHero = () => (
         </Link>
       </div>
       <div className="vision-hero-visual" aria-hidden="true">
-        {/* Replace with high-quality boardroom/architectural image: <img src="/assets/vision-hero.jpg" alt="..." /> */}
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80&auto=format&fit=crop&fmt=avif" type="image/avif" />
+          <source srcset="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80&auto=format&fit=crop&fmt=webp" type="image/webp" />
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80&auto=format&fit=crop" alt="Lotlite Boardroom" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1.5rem' }} loading="eager" decoding="async" />
+        </picture>
       </div>
     </div>
   </section>

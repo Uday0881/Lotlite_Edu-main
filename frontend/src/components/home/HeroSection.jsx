@@ -527,11 +527,16 @@ export default function HeroSection() {
 
           {/* RIGHT — image card, direct sibling of .hs__card inside .hs__stage */}
           <div className="hs__img-card animate-fade-up">
-            <img
-              src={heroData.heroImage}
-              alt="Futuristic city skyline — golden hour"
-              loading="eager"
-            />
+            <picture>
+          <source srcset="https://images.unsplash.com/photo-1600130453845-dfe1e06b58ba?w=1200&q=80&auto=format&fit=crop&fmt=avif" type="image/avif" />
+          <source srcset="https://images.unsplash.com/photo-1600130453845-dfe1e06b58ba?w=1200&q=80&auto=format&fit=crop&fmt=webp" type="image/webp" />
+          <img 
+            src={heroData.heroImage}
+            alt="Futuristic city skyline — golden hour"
+            loading="eager"
+            decoding="async"
+          />
+          </picture>
             <div className="hs__img-golden" aria-hidden="true" />
             <div className="hs__img-gloss"  aria-hidden="true" />
           </div>

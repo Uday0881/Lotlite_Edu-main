@@ -1,3 +1,5 @@
+import ContactForm from '../components/shared/ContactForm.jsx';
+import SEO from '../components/shared/SEO.jsx';
 import { useEffect } from 'react'
 import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -18,6 +20,7 @@ export default function Contact() {
 
   return (
     <section style={{ paddingTop: '9rem', paddingBottom: '6rem' }}>
+      <SEO title="Contact" />
       <div style={{ maxWidth: '64rem', margin: '0 auto', padding: '0 1.5rem' }}>
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} variants={fadeInUp}>
           <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: '0.75rem' }}>Contact</div>

@@ -1,3 +1,4 @@
+import SEO from '../components/shared/SEO.jsx';
 import { useEffect } from 'react'
 import { Users, FlaskConical, Coins, ArrowUpRight, TrendingUp } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -17,6 +18,7 @@ export default function Incubation() {
 
   return (
     <>
+      <SEO title="Incubation" />
       {/* Hero */}
       <section style={{ position: 'relative', paddingTop: '9rem', paddingBottom: '5rem', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: '5rem', right: '2.5rem', width: '26rem', height: '26rem', borderRadius: '50%', background: 'rgba(104,37,211,0.15)', filter: 'blur(64px)', zIndex: -1 }} />

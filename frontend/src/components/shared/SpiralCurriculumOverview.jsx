@@ -25,8 +25,12 @@ export default function SpiralCurriculumOverview() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}
+          className="spiral-top" style={{ gap: '1rem', alignItems: 'center' }}
         >
+          <style>{`
+            .spiral-top { display: flex; flex-direction: column; text-align: center; }
+            @media(min-width: 768px) { .spiral-top { flex-direction: row; text-align: left; } }
+          `}</style>
           <div style={{ flex: 1 }}>
             <svg width="160" height="160" viewBox="0 0 200 200" aria-hidden>
               <defs>

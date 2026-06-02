@@ -1,3 +1,4 @@
+import SEO from '../components/shared/SEO.jsx';
 import { useEffect } from 'react'
 import { LineChart, Landmark, Target, Quote } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -10,6 +11,7 @@ export default function Outcomes() {
 
   return (
     <div style={{ minHeight: '100vh', paddingTop: '6rem', paddingBottom: '4rem' }}>
+      <SEO title="Outcomes" />
       {/* Hero */}
       <section style={{ maxWidth: '80rem', margin: '0 auto', padding: '5rem 1.5rem 8rem', borderBottom: '1px solid var(--hairline)' }}>
         <div style={{ textAlign: 'center', maxWidth: '48rem', margin: '0 auto 4rem', animation: 'fade-up 0.8s ease both' }}>
